@@ -147,4 +147,13 @@ li{
     .card button{
         width: 100%;
     }
+    .lover-batch{
+        display: none;
+    }
+    .plant-lover{
+        flex-direction: column;
+    }
+    .lover-img img{
+        width: 100%;
+    }
 }
