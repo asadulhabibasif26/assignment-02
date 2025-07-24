@@ -1,9 +1,150 @@
 
+/* font style section */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 /* shared style */
 .color-1{
     color: #8987A1;
 }
-header{
+.text-1{
+    color: #E95A08;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 10px;
+}
+.text-2{
+    color: #E95A08;
+    font-weight: bold;
+    font-size: 3.1rem;
+    margin: 10px;
+}
+.text-3{
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 10px;
+}
+.text-4{
+    font-weight: bold;
+    font-size: 3.1rem;
+    margin: 10px;
+}
+.text-p{
+    color: rgba(0, 0, 0, 0.5);
+}
+.max-width{
     max-width: 1140px;
     margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.aline-item-center{
+    align-items: center;
+}
+.section-m{
+    margin-top: 120px;
+}
+
+/* navbar section style */
+
+.navbar{
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.nav-ul{
+    gap: 10px;
+}
+.nav-cart{
+    gap: 5px;
+    margin-left: 10px;
+}
+/* our plant style section */
+.plants-text{
+    text-align: center;
+}
+
+.card-continer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.card{
+    text-align: center;
+}
+.card > h4{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.card > h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.card > button{
+    background-color: #E95A08;
+    height: 50px;
+    width: 270px;
+    border: none;
+    color: white;
+}
+/* plant lover section style */
+.plant-lover{
+    display: flex;
+}
+
+.lover-batch img{
+    height: 285px;
+}
+.lover-batch{
+    margin-left: -140px;
+    margin-top: -140px;
+}
+.lover-des{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.lover-des li{
+    list-style:disc;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+/* extra style */
+li{
+    list-style: none;
+}
+
+/* responsive style section */
+@media screen and (max-width:576px) {
+    .nav-link{
+        display: none;
+    }
+    .fresh-folowers{
+        flex-direction: column;
+    }
+    .fresh-folowers img{
+        width: 100%;
+    }
+    .card-continer{
+        grid-template-columns: repeat(2,1fr); 
+    }
+    .card img{
+        width: 100%;
+    }
+    .card button{
+        width: 100%;
+    }
 }
