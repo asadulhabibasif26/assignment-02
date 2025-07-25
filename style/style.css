@@ -59,7 +59,9 @@
 .section-m{
     margin-top: 120px;
 }
-
+.aline-center{
+    text-align: center;
+}
 /* navbar section style */
 
 .navbar{
@@ -122,6 +124,88 @@
     margin-bottom: 30px;
     margin-top: 10px;
 }
+/* latest deals section style */
+.deals-img{
+    gap: 20px;
+}
+.deals-2img{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.deals-card img{
+    filter: brightness(70%);
+}
+.deals-card div{
+    margin-top: -150px;
+    text-align: center;
+    margin-left: 90px;
+    position: absolute;
+    color: white;
+     
+}
+.deals-card img{
+    border-radius: 14px;
+}
+.deals-card button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-decoration: underline;
+}
+.deals-card2 img{
+    filter: brightness(70%);
+    border-radius: 14px;
+}
+.deals-card2 div{
+    margin-top: -250px;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.deals-card2 button{
+    background-color: transparent;
+    border:none;
+    color: white;
+    text-decoration: underline;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+/* subscribe section style */
+.subscribe{
+    height: 533px;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe h3{
+    font-size: 3.1rem;
+    font-weight: bold;
+    color: white;
+}
+.subscribe-input input{
+    height: 44px;
+    width: 644px;
+}
+.subscribe-cont{
+    text-align: center;
+}
+.subscribe-input{
+    display: flex;
+    justify-content: center;
+}
+.subscribe-input button{
+    height: 50px;
+    width: 186px;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+}
 /* extra style */
 li{
     list-style: none;
@@ -155,5 +239,17 @@ li{
     }
     .lover-img img{
         width: 100%;
+    }
+    .deals-img{
+        flex-direction: column;
+    }
+    .deals-2img img{
+        width: 100%;
+    }
+    .deals-card2 img{
+        width: 100%;
+    }
+    .subscribe-input{
+      width: 400px;
     }
 }
